@@ -1,0 +1,48 @@
+{
+  "name": "grunt-appbot-compiler",
+  "description": "Grunt Compiler for Appbot Coffescript Apps",
+  "version": "0.1.1",
+  "homepage": "https://github.com/roberto/grunt-appbot-coffee",
+  "author": {
+    "name": "Roberto Rodriguez",
+    "email": "roberto@rodriguezartavia.com",
+    "url": "rodriguezartavia.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roberto/grunt-appbot-coffee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roberto/grunt-appbot-coffee/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/roberto/grunt-appbot-coffee/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1",
+    "coffee-script": "1.6.3",
+    "fast-detective": "0.0.2",
+    "eco": "~1.1.0",
+    "should": "~1.2.2",
+    "appbot-compiler": "latest"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
