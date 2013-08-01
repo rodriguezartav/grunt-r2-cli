@@ -13,9 +13,9 @@ module.exports = function(grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
-  var compiler = require("grunt-appbot-compiler")
+  var compiler = require("appbot-compiler")
 
-  grunt.registerMultiTask('appbot_coffee', 'Compile App with CommonJS', function() {
+  grunt.registerMultiTask('grunt_appbot_compiler', 'Compile App with CommonJS', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({});
 
