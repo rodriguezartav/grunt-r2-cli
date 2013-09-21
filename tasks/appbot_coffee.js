@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
     var result = ""
 
-    result = compiler.generateFile(this.data.appPaths , this.data.dependencyPaths);
+    result = compiler.generateFile(this.data.appPaths, this.data.lessVariables , this.data.dependencyPaths);
 
     // Write the destination file.
     grunt.file.write(this.data.destination, result);

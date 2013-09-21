@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    appbot_coffee: {
+    grunt_appbot_compiler: {
       oneApp: {
         options: {
         },
@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         options: {
         },
         appPaths: ['./test/fixtures/app/components/socialBar'],
+        lessVariables: "./test/fixtures/app/lessVariables.less",
         destination: "./tmp/anotherApp.js"
       },
     },
@@ -49,9 +50,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
+
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'appbot_coffee', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'grunt_appbot_compiler', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['test']);

@@ -39,11 +39,13 @@ exports.appbot_coffee = {
     test.done();
   },
   compileAnotherApp: function(test) {
-    test.expect(2);
+    test.expect(3);
     var result = ""
     result = grunt.file.read('tmp/anotherApp.js');
     test.notEqual(result,null,"Compiler should no be null")    
     test.notEqual(result.indexOf("components/socialBar" , -1 , "result should contain components/socialBar" ))
+    test.notEqual(result.indexOf("#3f3f3f" , -1 , "result should contain less variables" ))
+
 
     test.done();
   },
