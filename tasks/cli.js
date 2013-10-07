@@ -29,10 +29,10 @@ module.exports = function(grunt) {
     result = CLI.createApp(appName);
 
     // Write the destination file.
-    grunt.file.write(this.data.destination + "/" + appName + "_style.less", result["style"]);
-    grunt.file.write(this.data.destination + "/" + appName + "_layout.eco", result["layout"]);
-    grunt.file.write(this.data.destination + "/" + appName + ".coffee", result["app"]);
-    grunt.file.write(this.data.destination + "/component.json", result["component"]);
+    grunt.file.write(this.data.destination + "/" + appName + "/" + appName + "_style.less", result["style"]);
+    grunt.file.write(this.data.destination + "/" + appName + "/" + appName + "_layout.eco", result["layout"]);
+    grunt.file.write(this.data.destination + "/" + appName + "/" + appName + ".coffee", result["app"]);
+    grunt.file.write(this.data.destination + "/" + appName + "/component.json", result["component"]);
   });
 
 };

@@ -1,7 +1,7 @@
 {
   "name": "grunt-r2-cli",
   "description": "Grunt CLI for R2 Plataform",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/roberto/grunt-appbot-coffee",
   "author": {
     "name": "Roberto Rodriguez",
